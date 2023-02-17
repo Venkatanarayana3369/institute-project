@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-3 col-md-6">
+            <form method="POST">
+              {% csrf_token %}
+              <textarea name="feedback" rows="8" cols="80" class="form-control" placeholder="Enter your feedback here..."></textarea>
+              <div class="text-right mt-1">
+                <input type="submit"  value="send" class=" btn btn-outline-success">
+                <input type="reset"  value="cancel" class="btn btn-outline-danger">
+
+
+              </div>
+            </form>
+            {% if feedbacks %}
+            {% for i in feedbacks %}
+            <figure>
+              <blockquote class="blockquote">
+                <p>  {{ i.content }}</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                On <cite title="Source Title">{{ i.date}}</cite>
+              </figcaption>
+            </figure>
+            {% endfor %}
+            {% else %}
+            <h1 class="text-center">No comments are available...</h1>
+            {% endif %}
+          </div >
+
+        </div>
+
+      </div>
+    {% endblock %}
+
+  </body>
+</html>

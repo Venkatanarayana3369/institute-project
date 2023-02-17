@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-4 " >
+          <h3 ><font color="red">About Institute:</font></h3>
+          <p>Narayanatechhouse(NTH) is one of the reputed coaching institute of ameerpet.this institutes
+             provides all kind technical courses like python along with fullstack,AWS,Tableau,UI Technologies,Azure,Java.</p>
+        </div>
+<div class="col-md-4 " >
+  <h3><font color="green">Goals:</font></h3>
+   <p>NarayanaTechHouse(NTH) always aims to provide quality teaching and more placements in MNCs with very good packages.</p>
+</div>
+<div class="col-md-4">
+  <h3><font color="orange"> Achievements:</font></h3>
+<p>We have students placed among the MNCs like TCS,WIPRO,INFOSYS,ACCENTURE.We got awards for best teaching
+  and quality teaching.we have very good feedback from the students. </p>
+</div>
+      </div>
+    </div>
+    {% load static %}
+        <div class="container-fluid bg-secondary pt-5">
+          <div class="row">
+            <div class=" offset-md-1 col-md-4">
+              <img src="{%static 'images/narayanasir.jpeg' %}" alt="" style="height:80%; width:50%; border:solid white 3px;"  class="img-thumnail">
+            </div>
+            <div class="col-md-7">
+              <h2>Founder:</h2>
+              <p>Mr.Narayana is a well-known in ameerpet python trainer for past 10years.He is the founder of NarayanaTechHouse(NTH)
+                 which was established on jan-01-2010.He is providing good quality of training and placements .He was awarded for
+                  "best trainer award".He has 10 years of experience in python training.His students got placed all over the hyderabad
+                  in top MNCs like TCS,INFOSYS,WIPRO.  </p>
+            </div>
+            </div>
+        </div>
+          <h2 class="text-white bg-dark ">Our Team:</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-dark">Trainer</div>
+                <div class="card-body text-success">
+                  <div class=" offset-md-1 col-md-4">
+                    <img src="{%static 'images/narayanasir.jpeg' %}" alt="" style="height:500%; width:400%; border:solid white 3px; padding-right:30px;"  class="img-thumnail">
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-success">Mr.Narayana<br>Python <br>(exp:10+years)</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-dark ">Trainer</div>
+                <div class="card-body text-success">
+                  <div class=" offset-md-1 col-md-4">
+                    <img src="{%static 'images/narayanasir.jpeg' %}" alt="" style="height:500%; width:400%; border:solid white 3px; padding-right:30px;"  class="img-thumnail">
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-success">Mr.Narayana<br>Python <br>(exp:10+years)</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-dark">Trainer</div>
+                <div class="card-body text-success">
+                  <div class=" offset-md-1 col-md-4">
+                    <img src="{%static 'images/narayanasir.jpeg' %}" alt="" style="height:500%; width:400%; border:solid white 3px; padding-right:30px;"  class="img-thumnail">
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-success">Mr.Narayana<br>Python <br>(exp:10+years)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    {% endblock %}
+
+  </body>
+</html>

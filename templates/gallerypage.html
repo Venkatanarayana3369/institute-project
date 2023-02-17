@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+{% load static %}
+    <div class="container-fluid bg-secondary pt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{%static 'images/nth1.jpg' %}" alt="" style="height:90%; width:90%; border:solid white 3px;"  class="img-thumnail">
+        </div>
+        <div class="col-md-4">
+          <img src="{%static 'images/nth2.jpg' %}" alt=""  style="height:90%; width:90%; border:solid white 3px;" class="img-thumnail">
+        </div>
+        <div class="col-md-4">
+          <img src="{%static 'images/nth3.jpg' %}" alt=""  style="height:90%; width:90%; border:solid white 3px;" class="img-thumnail">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{%static 'images/nth4.jpeg' %}" alt="" style="height:80%; width:90%; border:solid white 3px; "  class="img-thumnail">
+        </div>
+        <div class="col-md-4">
+          <img src="{%static 'images/nth5.jpg' %}" alt=""  style="height:80%; width:90%;  border:solid white 3px;" class="img-thumnail">
+        </div>
+        <div class="col-md-4">
+          <img src="{%static 'images/nth6.jpg' %}" alt=""  style="height:80%; width:90%; border:solid white 3px;" class="img-thumnail">
+
+        </div>
+
+      </div>
+      <div class="row ">
+        <div class="col-md-4">
+          <img src="{%static 'images/nth7.jpg' %}" alt="" style="height:90%; width:90%; border:solid white 3px; "  class="img-thumnail">
+        </div>
+        <div class="col-md-4">
+          <img src="{%static 'images/nth8.jpeg' %}" alt=""  style="height:90%; width:90%;  border:solid white 3px;" class="img-thumnail">
+        </div>
+        <div class="col-md-4">
+          <img src="{%static 'images/nth9.jpeg' %}" alt=""  style="height:90%; width:90%; border:solid white 3px;" class="img-thumnail">
+
+        </div>
+
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+{% block content %}
+
+  <div class="container-fluid" style=margin-top:100px;>
+    <h2 >Enter Your Details</h2>
+    <div class="row">
+      <div class="col-md-4 " style=margin-top:40px;>
+        <form  method="POST">
+          {% csrf_token %}
+          <label>name</label>
+          <input type="text" name="name" class="form-control">
+          <label>email</label>
+            <input type="email" name="email" class="form-control">
+          <label>mobile</label>
+            <input type="number" name="mobile" class="form-control">
+          <label>course</label>
+            <input type="text" name="course" class="form-control">
+          <label>location</label>
+            <input type="text" name="location" class="form-control">
+            <center>
+              <input type="submit" value="register" class="btn btn-outline-success btn-lg mt-2">
+              <input type="reset" value="cancel" class="btn btn-outline-danger btn-lg mt-2" >
+        </form>
+      </div>
+      <div class="col-md-4" >
+        <h4 >Address-1:</h4>
+        <p>Flat No 303, 3rd floor, Naga Sai Nivas Prime Hospital Lane, opposite to Balaji Towers, Ameerpet, Hyderabad, Telangana 500016</p>
+        <br>
+        <br>
+        <h4>Address-2:</h4>
+        <p>Meghamala Apartment road, East Srinivas Nagar Colony, Srinivasa Nagar, Ameerpet, Hyderabad, Telangana 500082</p>
+      </div>
+<div class="col-md-4 mt-1" >
+  <h3>Click here for directions--></h3>
+  <br>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.445047689586!2d78.44357301535344!3d17.438400305920652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb910956383b7f%3A0xb25b7c2fe2e4fd5d!2sNarayana%20Tech%20House!5e0!3m2!1sen!2sin!4v1672654265494!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    </div>
+
+  </div>
+{% endblock %}
+
+  </body>
+</html>

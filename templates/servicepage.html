@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+    <h1 class="text-center bg-secondary">all available courses</h1>
+    {% if courses %}
+    <table class=" text-center table table-bordered">
+      <thead class="bg-success text-white">
+        <tr>
+          <th>course name </th>
+          <th>duration</th>
+          <th>fee</th>
+          <th>start date</th>
+          <th>timings</th>
+          <th>trainer name</th>
+          <th>trainer exp</th>
+        </tr>
+      </thead>
+      <tbody class="bg-dark text-white">
+        {% for i in courses %}
+        <tr>
+          <td>{{ i.course_name}}</td>
+          <td>{{ i.duration}}</td>
+          <td>{{ i.fee}}</td>
+          <td>{{ i.start_date}}</td>
+          <td>{{ i.timings}}</td>
+          <td>{{ i.trainer_name}}</td>
+          <td>{{ i.trainer_exp}}</td>
+        </tr>
+
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% else %}
+    <h1>no courses available</h1>
+    {% endif %}
+    {% endblock %}
+
+  </body>
+</html>
